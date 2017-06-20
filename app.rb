@@ -14,6 +14,10 @@ class App < Sinatra::Base
   get '/youtube'do
     erb :youtube
   end
+  
+  get '/team' do
+    erb :team
+  end
 
   post '/subscribe' do
     @full_name = params[:full_name]
