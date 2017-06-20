@@ -4,6 +4,11 @@ class App < Sinatra::Base
   get '/' do
     @error = params['error']
     erb :home
+    #redirect '/'
+  end
+
+  get '/home'do
+    redirect '/'
   end
 
   post '/subscribe' do
