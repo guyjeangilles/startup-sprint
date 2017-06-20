@@ -11,6 +11,10 @@ class App < Sinatra::Base
     redirect '/'
   end
 
+  get '/youtube'do
+    erb :youtube
+  end
+
   post '/subscribe' do
     @full_name = params[:full_name]
     @email = params[:email]
