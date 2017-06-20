@@ -15,6 +15,10 @@ class App < Sinatra::Base
     erb :youtube
   end
 
+  get '/splash' do
+    erb :splash
+  end
+
   post '/subscribe' do
     @full_name = params[:full_name]
     @email = params[:email]
